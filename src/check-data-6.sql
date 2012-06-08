@@ -1,0 +1,1 @@
+SELECT t0.germplasm_id FROM  (SELECT * FROM GermplasmGeneNameSearch_wrk WHERE name LIKE '%CULL%' ESCAPE      '\') t0,  (SELECT * FROM GermplasmStockNameSearch_wrk WHERE name LIKE '%CS28%' ESCAPE '\') t1,  (SELECT * FROM GermplasmDonorNameSearch_wrk WHERE name LIKE 'KOORNNEEF' ESCAPE '\') t2 WHERE t1.germplasm_id = t0.germplasm_id  AND t2.germplasm_id = t1.germplasm_id 

@@ -1,0 +1,1 @@
+delete from result_germplasm where query_id = 2990672
